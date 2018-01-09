@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: fe27ebd48eb73964bb905ee518d84011
-timeCreated: 1508980519
+guid: 7cfb22d76a7ac4c429f15e265e514837
+timeCreated: 1508484297
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
@@ -73,5 +73,5 @@ TextureImporter:
     physicsShape: []
   spritePackingTag: 
   userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+  assetBundleName: scene_1/textures
+  assetBundleVariant: ab

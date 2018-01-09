@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8550aadf419901a4da707e82a27f6728
+guid: 4141087a015e0774197d5b976373acaf
 timeCreated: 1508980573
 licenseType: Free
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 2100000
   userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+  assetBundleName: scene_1/materals
+  assetBundleVariant: ab
