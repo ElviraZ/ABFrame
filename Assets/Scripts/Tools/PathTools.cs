@@ -24,7 +24,7 @@ public class PathTools
 
         return GetPlatFormPath()+"/"+ GetPlatFormName();
     }
-    private static string GetPlatFormPath()
+    public static string GetPlatFormPath()
     {
 
         string outPath = string.Empty;
@@ -44,7 +44,7 @@ public class PathTools
         }
         return outPath;
     }
-    private static string GetPlatFormName()
+    public static string GetPlatFormName()
     {
         string outName = string.Empty;
         switch (Application.platform)
@@ -63,5 +63,31 @@ public class PathTools
                 break;
         }
         return outName;
+    }
+
+    /// <summary>
+    /// 获取AB 包的www 的下载路径
+    /// </summary>
+    /// <returns></returns>
+    public static string GetWWWPath()
+    {
+        string returnWWWPath = string.Empty ;
+        switch (Application.platform)
+        {
+
+            case RuntimePlatform.WindowsPlayer:
+            case RuntimePlatform.WindowsEditor:
+                returnWWWPath = "file://" + GetABOutPath();
+                break;
+            case RuntimePlatform.IPhonePlayer:
+                returnWWWPath = "file://" + GetABOutPath();
+                break;
+            case RuntimePlatform.Android:
+                returnWWWPath = "jar:file://" + GetABOutPath();
+                break;
+            default:
+                break;
+        }
+        return returnWWWPath;
     }
 }

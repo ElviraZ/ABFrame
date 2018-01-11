@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3304438413
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: scene_1/materals.ab
+      Dependencies: {}
+    Info_1:
+      Name: scene_1/prefabs.ab
+      Dependencies: {}
+    Info_2:
+      Name: scene_1/textures.ab
+      Dependencies: {}
+    Info_3:
+      Name: scene_1/scene_1.u3d
+      Dependencies: {}

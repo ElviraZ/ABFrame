@@ -12,7 +12,7 @@ public class ABEditor
     /// <summary>
     /// 设置AB 的包名
     /// </summary>
-    [MenuItem("AssetBundle  Tools/1、Set AB  Labels")]
+    [MenuItem("AssetBundle  Tools/AB  Labels/Set  Labels")]
     public static void SetABLabel()
     {
         isSet = true;
@@ -149,7 +149,8 @@ public class ABEditor
     }
     #endregion
     #region 删除所有的AB 的包名
-    [MenuItem("AssetBundle  Tools/2、Delete AB  Labels")]
+
+    [MenuItem("AssetBundle  Tools/AB  Labels/Delete  Labels")]
     public static void DeleteABLabel()
     {
         isSet = false;
@@ -160,7 +161,7 @@ public class ABEditor
     #endregion
     #endregion
     #region 打AB包
-    [MenuItem("AssetBundle  Tools/3、Build AB /For Win64")]
+    [MenuItem("AssetBundle  Tools/Build AB /For Win64")]
     public static void BuildAllAB()
     {
         //打包AB输出路径
@@ -174,7 +175,7 @@ public class ABEditor
         BuildPipeline.BuildAssetBundles(strABOutPathDIR, BuildAssetBundleOptions.None, BuildTarget.StandaloneWindows64);
     }
 
-    [MenuItem("AssetBundle  Tools/3、Build AB /For Android")]
+    [MenuItem("AssetBundle  Tools/Build AB /For Android")]
     public static void BuildAllABAndroid()
     {
         //打包AB输出路径
@@ -188,7 +189,7 @@ public class ABEditor
         BuildPipeline.BuildAssetBundles(strABOutPathDIR, BuildAssetBundleOptions.None, BuildTarget.Android);
     }
 
-    [MenuItem("AssetBundle  Tools/3、Build AB /For IOS")]
+    [MenuItem("AssetBundle  Tools/Build AB /For IOS")]
     public static void BuildAllABIOS()
     {
         //打包AB输出路径
@@ -204,7 +205,7 @@ public class ABEditor
 
     #endregion
     #region 删除AB包
-    [MenuItem("AssetBundle  Tools/4、Delete AB ")]
+    [MenuItem("AssetBundle  Tools/Delete AB ")]
     public static void DeleteAllAB()
     {
         string deleteDir = PathTools.GetABOutPath();
